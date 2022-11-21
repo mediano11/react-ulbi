@@ -2,11 +2,11 @@ import React from 'react';
 import MyButton from "./UI/button/MyButton";
 
 const PostItem = (props) => {
-    const {title, body} = props.post;
+    const {id,title, body} = props.post;
     return (
         <div className="post">
             <div className="post__content">
-                <strong>{props.number}. {title}</strong>
+                <strong>{id}. {title}</strong>
                 <div>
                     {body}
                 </div>

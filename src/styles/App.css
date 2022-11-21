@@ -6,7 +6,8 @@
 
 #root{
     display: flex;
-    justify-content: center
+    flex-direction: column;
+    align-items: center
 }
 
 .App{
@@ -35,4 +36,30 @@
 .post-exit-active {
     transform: translateX(-350px);
     transition: all 500ms ease-in;
+}
+.page__wrapper{
+    margin-top: 30px;
+    display: flex;
+}
+.page{
+    padding: 10px;
+    border-radius: 1px solid teal;
+    cursor: pointer;
+}
+.page__current{
+    border: 2px solid orange;
+    font-weight: 700;
+}
+
+.navbar{
+    width: 100vw;
+    background: steelblue;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+
+}
+.navbar__links{
+    margin-left: auto;
 }
