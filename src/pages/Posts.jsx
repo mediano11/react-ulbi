@@ -36,10 +36,9 @@ function Posts() {
     }
     useEffect(()=>{
         fetchPosts(limit,page)
-    }, [])
-    const changePage = (limit,page) => {
+    }, [page,limit])
+    const changePage = (page) => {
         setPage(page)
-        fetchPosts(limit,page)
     }
     return (
         <div className="App">

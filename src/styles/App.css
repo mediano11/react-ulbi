@@ -43,7 +43,7 @@
 }
 .page{
     padding: 10px;
-    border-radius: 1px solid teal;
+    border: 1px solid teal;
     cursor: pointer;
 }
 .page__current{
