@@ -8,7 +8,7 @@ const PostItem = (props) => {
     return (
         <div className="post">
             <div className="post__content">
-                <strong>{id}. {title}</strong>
+                <strong>{id > 1000 ? props.number : id}. {title}</strong>
                 <div>
                     {body}
                 </div>
